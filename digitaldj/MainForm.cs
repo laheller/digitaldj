@@ -5,6 +5,8 @@ using System.Text;
 using System.Windows.Forms;
 
 using Un4seen.Bass;
+using Un4seen.BassAsio;
+using Un4seen.BassWasapi;
 
 namespace digitaldj
 {
@@ -28,6 +30,10 @@ namespace digitaldj
 		
 		void BtnInfoClick(object sender, EventArgs e)
 		{
+			SetupDialog dlg = new SetupDialog();
+			dlg.ShowDialog();
+			return;
+			
 			StringBuilder sb = new StringBuilder();
 			for (int i=0; i<dsdevs.Length; i++)
 			{
