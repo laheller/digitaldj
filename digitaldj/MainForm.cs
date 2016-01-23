@@ -33,7 +33,7 @@ namespace digitaldj
 			SetupDialog dlg = new SetupDialog();
 			dlg.ShowDialog();
 			return;
-			
+			/*
 			StringBuilder sb = new StringBuilder();
 			for (int i=0; i<dsdevs.Length; i++)
 			{
@@ -41,6 +41,7 @@ namespace digitaldj
 				else sb.AppendLine(dsdevs[i].name);
 			}
 			MessageBox.Show(sb.ToString(), "DirectSound devices (* means default)");
+			*/
 		}
 	}
 }
